@@ -28,6 +28,13 @@
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
                     </div>
+
+                    <div class="form-group mb-3">
+                        <input type="password" placeholder="Password" id="password" class="form-control" name="password" required>
+                        @error('password')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
                     </div>
